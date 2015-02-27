@@ -1,0 +1,4 @@
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailPipelineExtensions\bin\x86\Debug\HailPipelineExtensions.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailPipelineExtensions\bin\x86\Debug\HailPipelineExtensions.pdb
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailPipelineExtensions\obj\x86\Debug\HailPipelineExtensions.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailPipelineExtensions\obj\x86\Debug\HailPipelineExtensions.pdb

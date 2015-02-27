@@ -1,0 +1,5 @@
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\bin\Debug\Graupel.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\bin\Debug\Graupel.pdb
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\Graupel.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\Graupel.pdb
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\GraupelWin.csprojResolveAssemblyReference.cache

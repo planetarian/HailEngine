@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D627CC6-DE79-48DA-9C1B-9F4662B2FEF7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hail</RootNamespace>
+    <AssemblyName>Hail</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Components\AttachmentComponent.cs" />
+    <Compile Include="Components\CameraComponent.cs" />
+    <Compile Include="Components\CollisionComponent.cs" />
+    <Compile Include="Components\EvalComponent.cs" />
+    <Compile Include="Components\InputComponent.cs" />
+    <Compile Include="Components\LookAtComponent.cs" />
+    <Compile Include="Components\ModelComponent.cs" />
+    <Compile Include="Components\MouseTargetComponent.cs" />
+    <Compile Include="Components\MovementComponent.cs" />
+    <Compile Include="Components\SonicPhysicsComponent.cs" />
+    <Compile Include="Components\SnapComponent.cs" />
+    <Compile Include="Components\TransformComponent.cs" />
+    <Compile Include="Components\ViewportComponent.cs" />
+    <Compile Include="Components\WaypointFollowerComponent.cs" />
+    <Compile Include="Components\WobbleComponent.cs" />
+    <Compile Include="Components\ZoomComponent.cs" />
+    <Compile Include="Core\HailComponent.cs" />
+    <Compile Include="Core\HailGame.cs" />
+    <Compile Include="GraupelSemantics\GraupelExpressionVisitor.cs" />
+    <Compile Include="GraupelSemantics\GraupelLoader.cs" />
+    <Compile Include="Components\ComponentPropertyAttribute.cs" />
+    <Compile Include="Helpers\Expect.cs" />
+    <Compile Include="Helpers\ExpressionExtensions.cs" />
+    <Compile Include="Helpers\ExtensionMethods.cs" />
+    <Compile Include="Helpers\HandyMath.cs" />
+    <Compile Include="Helpers\Primitives.cs" />
+    <Compile Include="Helpers\QuaternionHelper.cs" />
+    <Compile Include="Helpers\RectangleF.cs" />
+    <Compile Include="Helpers\SensorLine.cs" />
+    <Compile Include="Helpers\VectorHelper.cs" />
+    <Compile Include="Messenger\IExecuteWithObject.cs" />
+    <Compile Include="Messenger\IMessenger.cs" />
+    <Compile Include="Messenger\Messenger.cs" />
+    <Compile Include="Messenger\WeakAction.cs" />
+    <Compile Include="Messenger\WeakActionGeneric.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\AttachSystem.cs" />
+    <Compile Include="Systems\CameraSystem.cs" />
+    <Compile Include="Systems\CollisionPrepSystem.cs" />
+    <Compile Include="Systems\DebugRenderSystem.cs" />
+    <Compile Include="Systems\EvalSystem.cs" />
+    <Compile Include="Systems\InputSystem.cs" />
+    <Compile Include="Systems\ModelLoadSystem.cs" />
+    <Compile Include="Systems\MouseSelectSystem.cs" />
+    <Compile Include="Systems\MouseZoomSystem.cs" />
+    <Compile Include="Systems\MovementSystem.cs" />
+    <Compile Include="Systems\SonicCollisionSystem.cs" />
+    <Compile Include="Systems\SonicPhysicsSystem.cs" />
+    <Compile Include="Systems\SnapSystem.cs" />
+    <Compile Include="Systems\WaypointSystem.cs" />
+    <Compile Include="Systems\WobbleSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\WindowsGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Data\entitydef.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Data\entitytest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Icon.ico" />
+    <None Include="SDL.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\artemis_CSharp-master\Artemis_XNA_INDEPENDENT\Artemis.csproj">
+      <Project>{22c89af2-e1cf-4976-91b9-7d33773dc6e7}</Project>
+      <Name>Artemis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graupel\GraupelWin.csproj">
+      <Project>{28a9ae12-a162-4795-b930-b25edaee11af}</Project>
+      <Name>GraupelWin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HailContent\HailContentLib.csproj">
+      <Project>{16cebbbb-7621-44c7-8ffd-e6e7ac269474}</Project>
+      <Name>HailContentLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

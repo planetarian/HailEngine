@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:MeshContent">
+    <Name>Box001</Name>
+    <Identity>
+      <SourceFilename>C:\Users\awolford01\SkyDrive\Projects\Hail\HailContent\Models\ramp_shallow01.FBX</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <OpaqueData>
+      <Data Key="MaxHandle" Type="int">7</Data>
+    </OpaqueData>
+    <Transform>2.54 0 0 0 0 1.55530138E-16 -2.54 0 0 2.54 1.55530138E-16 0 0 0 0 1</Transform>
+    <Positions>-5 -5 0 5 -5 0 -5 5 0 5 5 0 5 -5 2.5 5 5 2.5</Positions>
+    <Geometry>
+      <Batch>
+        <Indices>2 1 0 0 3 2 6 5 4 4 7 6 10 9 8 13 12 11 11 14 13 17 16 15</Indices>
+        <Vertices>
+          <PositionIndices>0 2 3 1 0 4 5 2 0 1 4 1 3 5 4 2 5 3</PositionIndices>
+          <Channels>
+            <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 0 -1 0 0 -1 0 0 -1 0 0 -1 -0.242535621 0 0.9701425 -0.2425356 0 0.9701424 -0.242535621 0 0.9701425 -0.2425356 0 0.9701424 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0</VertexChannel>
+            <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">1 1 1 0 0 0 0 1 0 1 1 1 1 0 0 0 0 1 1 1 1 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1</VertexChannel>
+          </Channels>
+        </Vertices>
+      </Batch>
+    </Geometry>
+  </Asset>
+</XnaContent>

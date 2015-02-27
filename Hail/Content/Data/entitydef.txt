@@ -1,0 +1,82 @@
+global {
+	template camera {
+		transform position: 10 20 30;
+		camera;
+	}
+	
+	template mouseTarget {
+		transform;
+		movement;
+		mouseTarget;
+	}
+	
+	template mapObject {
+		group "mapObjects";
+		transform;
+		model;
+	}
+
+	template collidableObject : mapObject {
+		collision {
+			type: "polygon";
+			collidesWithGroups: "player", "bullet";
+			collisionDamage: 100;
+			solid: true;
+		}
+		health value: 200; // hard to kill
+	}
+}
+
+/*
+Scenes can be included by other scenes like templates.
+In this instance, we're storing the level's terrain data
+in one scene and loading it into another.
+This lets us create multiple levels that are set in
+the same location without having to duplicate the data.
+*/
+scene levelData {
+	
+	entity : collidableObject {
+		model name: "ground";
+	}
+
+	entity : collidableObject {
+		model name: "wall01";
+		transform position: 4 0 10 , 10 4 30;
+	}
+}
+
+scene scene001 : levelData {
+
+	template boxBaddie {
+		group "enemy";
+		transform;
+		movement;
+		ai script: "box";
+		model name: "box";
+		health value: 30;
+		collision {
+			type: "aabb";
+			collidesWithGroups: "player", "bullet";
+			collisionDamage: 30;
+			solid: false;
+		}
+	}
+
+	entity : boxBaddie {
+		transform position: rand(-20,20) 0 rand(-20,20); 
+	}
+
+	entity boxboss : boxBaddie {
+		ai script: "boxboss";
+		health value: (100-2)/3;
+	}
+
+	entity mouse : mouseTarget {
+		transform {
+			scale: (.5 .25 .5) * (3 2 1);
+			rotation: y 45 deg;
+		}
+	}
+
+}

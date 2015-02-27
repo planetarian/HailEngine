@@ -1,0 +1,3 @@
+C:\Users\awolford01\SkyDrive\Projects\Hail\artemis_CSharp-master\Artemis_WindowsStore\ArtemisWS.csproj;neutral
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\GraupelWin8.csproj;neutral
+C:\Users\awolford01\SkyDrive\Projects\Hail\Hail\HailWin8.csproj;neutral

@@ -1,0 +1,26 @@
+[global | scene*]
+
+global {
+	template*
+}
+
+scene sceneName {
+	template* | entity*
+}
+
+template templateName [: templateExtends [, templateExtends]*]? {
+	group "groupName";?
+	component*
+}
+
+entity [entityName]? [: templateExtends [, templateExtends]*]? {
+	group "groupName";?
+	component*
+}
+
+component
+	; | property | {
+	property*
+}
+
+property: value;

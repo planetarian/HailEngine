@@ -1,0 +1,7 @@
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\bin\Windows Phone\Debug\Content\Models\box.xnb
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\bin\Windows Phone\Debug\Content\Models\boxchamfer.xnb
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\bin\Windows Phone\Debug\HailContentLib.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\bin\Windows Phone\Debug\HailContentLib.pdb
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\obj\Windows Phone\Debug\HailContentLib.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\obj\Windows Phone\Debug\HailContentLib.pdb

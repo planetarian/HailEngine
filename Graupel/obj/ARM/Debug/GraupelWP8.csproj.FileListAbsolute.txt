@@ -1,0 +1,4 @@
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\Bin\ARM\Debug\GraupelWP8.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\Bin\ARM\Debug\GraupelWP8.pdb
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\ARM\Debug\GraupelWP8.dll
+C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\ARM\Debug\GraupelWP8.pdb

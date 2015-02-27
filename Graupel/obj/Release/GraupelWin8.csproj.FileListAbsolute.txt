@@ -1,0 +1,14 @@
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\bin\Release\GraupelWin8.dll
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\bin\Release\GraupelWin8.pdb
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\bin\Release\GraupelWin8.pri
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\GraupelWin8.dll
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\GraupelWin8.pdb
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\priconfig.xml.intermediate
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\layout.resfiles.intermediate
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\resources.resfiles.intermediate
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\pri.resfiles.intermediate
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\priconfig.xml
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\layout.resfiles
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\resources.resfiles
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\pri.resfiles
+C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\LanguageQualifiers.txt

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28A9AE12-A162-4795-B930-B25EDAEE11AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Graupel</RootNamespace>
+    <AssemblyName>Graupel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Expressions\AssignExpression.cs" />
+    <Compile Include="Expressions\BoolExpression.cs" />
+    <Compile Include="Expressions\ComponentExpression.cs" />
+    <Compile Include="Expressions\CompoundValueExpression.cs" />
+    <Compile Include="Expressions\DocumentExpression.cs" />
+    <Compile Include="Expressions\EntityBaseExpression.cs" />
+    <Compile Include="Expressions\EntityBodyExpression.cs" />
+    <Compile Include="Expressions\EntityExpression.cs" />
+    <Compile Include="Expressions\EofExpression.cs" />
+    <Compile Include="Expressions\EvalExpression.cs" />
+    <Compile Include="Expressions\ExpressionHelper.cs" />
+    <Compile Include="Expressions\FloatExpression.cs" />
+    <Compile Include="Expressions\FunctionExpression.cs" />
+    <Compile Include="Expressions\GlobalExpression.cs" />
+    <Compile Include="Expressions\GroupExpression.cs" />
+    <Compile Include="Expressions\IdentifierExpression.cs" />
+    <Compile Include="Expressions\IExpression.cs" />
+    <Compile Include="Expressions\IExpressionVisitor.cs" />
+    <Compile Include="Expressions\IntegerExpression.cs" />
+    <Compile Include="Expressions\ListExpression.cs" />
+    <Compile Include="Expressions\OperatorExpression.cs" />
+    <Compile Include="Expressions\PostfixExpression.cs" />
+    <Compile Include="Expressions\PrefixExpression.cs" />
+    <Compile Include="Expressions\SceneExpression.cs" />
+    <Compile Include="Expressions\StringExpression.cs" />
+    <Compile Include="Expressions\TemplateExpression.cs" />
+    <Compile Include="Expressions\TernaryExpression.cs" />
+    <Compile Include="GraupelMethod.cs" />
+    <Compile Include="GraupelParser.cs" />
+    <Compile Include="Lexer\ISourceReader.cs" />
+    <Compile Include="Lexer\ITokenReader.cs" />
+    <Compile Include="Lexer\Lexer.cs" />
+    <Compile Include="Lexer\Morpher.cs" />
+    <Compile Include="Lexer\StringSourceReader.cs" />
+    <Compile Include="Lexer\Token.cs" />
+    <Compile Include="Lexer\TokenListReader.cs" />
+    <Compile Include="Lexer\TokenType.cs" />
+    <Compile Include="ParseException.cs" />
+    <Compile Include="Parselets\AssignParselet.cs" />
+    <Compile Include="Parselets\BinaryOperatorParselet.cs" />
+    <Compile Include="Parselets\BoolParselet.cs" />
+    <Compile Include="Parselets\ComponentParselet.cs" />
+    <Compile Include="Parselets\CompoundValueParselet.cs" />
+    <Compile Include="Parselets\EntityBodyParselet.cs" />
+    <Compile Include="Parselets\EntityParselet.cs" />
+    <Compile Include="Parselets\EvalParselet.cs" />
+    <Compile Include="Parselets\ExpressionGroupParselet.cs" />
+    <Compile Include="Parselets\FloatParselet.cs" />
+    <Compile Include="Parselets\FunctionParselet.cs" />
+    <Compile Include="Parselets\GlobalParselet.cs" />
+    <Compile Include="Parselets\GroupParselet.cs" />
+    <Compile Include="Parselets\IdentifierParselet.cs" />
+    <Compile Include="Parselets\INonPrefixParselet.cs" />
+    <Compile Include="Parselets\IntegerParselet.cs" />
+    <Compile Include="Parselets\IPrefixParselet.cs" />
+    <Compile Include="Parselets\ListParselet.cs" />
+    <Compile Include="Parselets\PostfixOperatorParselet.cs" />
+    <Compile Include="Parselets\PrefixOperatorParselet.cs" />
+    <Compile Include="Parselets\SceneParselet.cs" />
+    <Compile Include="Parselets\StringParselet.cs" />
+    <Compile Include="Parselets\TemplateParselet.cs" />
+    <Compile Include="Parselets\TernaryParselet.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Position.cs" />
+    <Compile Include="PositionSpan.cs" />
+    <Compile Include="PrecedenceValues.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Expect.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

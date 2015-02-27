@@ -1,0 +1,48 @@
+global {
+	template camera {
+		transform;
+		camera;
+	}
+	
+	template mouseTarget {
+		transform;
+		movement;
+		mouseTarget;
+	}
+}
+
+scene scene001 {
+
+	template boxBaddie {
+		group "enemy";
+		transform;
+		movement;
+		ai script: "box";
+		model name: "box";
+		health value: 30;
+		collision {
+			type: "aabb";
+			collidesWithGroups: "player", "bullet";
+			collisionDamage: 30;
+			solid: false;
+		}
+	}
+
+	entity : boxBaddie {
+		transform position: rand(-20,20) 0 rand(-20,20); 
+	}
+
+	entity boxboss : boxBaddie {
+		ai script: "boxboss";
+		health value: 100;
+	}
+
+	entity mouse : mouseTarget {
+		transform {
+			scale: .5 .25 .5;
+			rotation: y 45 deg;
+		}
+	}
+
+}
+

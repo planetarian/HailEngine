@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Models\box.FBX</Source>
+      <Name>Models\box</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelMaxFixProcessor</Processor>
+      <Options>None</Options>
+      <Output>bin\Windows Phone\Debug\Content\Models\box.xnb</Output>
+      <Time>2013-05-09T01:52:06.7740253-05:00</Time>
+      <Dependency>
+        <Key>obj\Windows Phone\Debug\Models\box_0.xml</Key>
+        <Value>2013-05-15T23:17:33.5819442-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\boxchamfer.FBX</Source>
+      <Name>Models\boxchamfer</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelMaxFixProcessor</Processor>
+      <Options>None</Options>
+      <Output>bin\Windows Phone\Debug\Content\Models\boxchamfer.xnb</Output>
+      <Time>2013-05-09T01:52:06.7750259-05:00</Time>
+      <Dependency>
+        <Key>obj\Windows Phone\Debug\Models\boxchamfer_0.xml</Key>
+        <Value>2013-05-15T23:17:33.7049588-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\box.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\Windows Phone\Debug\Models\box_0.xml</Output>
+      <Time>2013-05-09T01:52:06.7740253-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\boxchamfer.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\Windows Phone\Debug\Models\boxchamfer_0.xml</Output>
+      <Time>2013-05-09T01:52:06.7750259-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{52DEEC48-08C0-4EF7-92A4-1223AFB49E6F}</ContentProjectGUID>
+      <TargetPlatform>WindowsPhone</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\obj\Windows Phone\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Reverie\SkyDrive\Projects\Hail\HailContent\bin\Windows Phone\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\Reverie\SkyDrive\Projects\Hail\HailPipelineExtensions\bin\x86\Debug\HailPipelineExtensions.dll</Key>
+        <Value>2013-05-15T23:17:33.0838809-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-01-09T00:25:57.9768692-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
