@@ -4,11 +4,31 @@ Hail game engine + Graupel entity definition language
 This was written as an experiment at creating an extensible
 Entity System based game engine in XNA/MonoGame.
 
-It uses a port of the Artemis Entity System library,
-and I developed a custom entity definition language called Graupel for it.
-It looks a little bit like JSON.
+It uses a modified port of the Artemis Entity System library as the base entity system.
 
-in pseudocode:
+Scenes are defined in a custom entity definition language I created, called Graupel.
+Graupel was designed to be simple and flexible. I based it on languages like JSON,
+and removed some of the verbosity of such languages by simplifying basic object creation.
+
+A component within an entity can contain multiple value setters:
+```
+viewport {
+	cameratag: "camera1";
+	bounds: 0 0 1 1;
+}
+```
+
+...or just a single inline setter:
+```
+transform scale: .5;
+```
+
+...or if it just wants to add the component with all values at defaults:
+```
+movement;
+```
+
+Graupel in pseudocode:
 ```
 [global | scene*]
 
