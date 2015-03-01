@@ -58,147 +58,88 @@ component
 property: value;
 ```
 
-And an example:
+And an example how how it might be used: (note: this is merely an example; some of the below components haven't actually been implemented!)
 ```
 global {
-	template testobj : boxcentered {
-		transform position: rand(50,250) rand(0,50) rand(-250,-50);
-		lookat {
-			targettag: "cameratarget";
-			speed: .5;
-		}
-		wobble {
-			amplitude: rand(.5, 2.5);
-			period: rand(.5, 5.5);
-			time: rand(0, 1000);
-		}
-		model modelname: "boxchamfer";
-	}
-
-	template box {
-		transform;
-		movement;
-		model {
-			modelname: "box";
-			offset: 0 -10 0;
-		}
-		collision;
-	}
-
-	template boxcentered : box {
-		model offset: 0 -10 0;
-	}
-}
-
-scene sidescroller {
-
-	entity : box {
-		transform {
-			scale: 10 1 1;
-		}
-	}
-	entity mouse : box {
-		transform;
-		mousetarget;
-		snap increment: 20;
-	}
-	entity player : box {
-		//input;
-		transform scale: 1.6 2 1.6;
-		movement;
-		sonicphysics;
-	}
-	entity camera1 : box {
+	template camera {
+		transform position: 10 20 30;
 		camera;
-		attachment {
-			targettag: "player";
-			positionattach: true;
-			positionoffset: 0 10 500;
-		}
-		lookat targettag: "player";
-		zoom smoothing: .3;
 	}
-	entity {
-		viewport {
-			cameratag: "camera1";
-			bounds: 0 0 1 1;
+	
+	template mouseTarget {
+		transform;
+		movement;
+		mouseTarget;
+	}
+	
+	template mapObject {
+		group "mapObjects";
+		transform;
+		model;
+	}
+
+	template collidableObject : mapObject {
+		collision {
+			type: "polygon";
+			collidesWithGroups: "player", "bullet";
+			collisionDamage: 100;
+			solid: true;
 		}
+		health value: 200; // hard to kill
 	}
 }
 
-scene test {
+/*
+Scenes can be included by other scenes like templates.
+In this instance, we're storing the level's terrain data
+in one scene and loading it into another.
+This lets us create multiple levels that are set in
+the same location without having to duplicate the data.
+*/
+scene levelData {
+	
+	entity : collidableObject {
+		model name: "ground";
+	}
 
-    entity random : testobj {
-		movement {
-			positiondelta: eval rand(-1,1) rand(-1,1) rand(-1,1);
+	entity : collidableObject {
+		model name: "wall01";
+		transform position: 4 0 10 , 10 4 30;
+	}
+}
+
+scene scene001 : levelData {
+
+	template boxBaddie {
+		group "enemy";
+		transform;
+		movement;
+		ai script: "box";
+		model name: "box";
+		health value: 30;
+		collision {
+			type: "aabb";
+			collidesWithGroups: "player", "bullet";
+			collisionDamage: 30;
+			solid: false;
 		}
 	}
 
-	entity obj1 : testobj;
-	entity obj2 : testobj;
-	entity obj3 : testobj;
-	entity obj4 : testobj;
-	entity obj5 : testobj;
-
-	entity mouse : box {
-		transform scale: .5;
-		mousetarget;
-		snap increment: 20;
+	entity : boxBaddie {
+		transform position: rand(-20,20) 0 rand(-20,20); 
 	}
 
-	entity follower : boxcentered {
-		waypointfollower {
-			loop: true;
-			speed: 50;
-			waypointreachdistance: 2;
-			rotatetofacewaypoint: true;
-			waypointtags: "obj1", "obj2", "obj3", "obj4", "obj5", "random";
-		}
+	entity boxboss : boxBaddie {
+		ai script: "boxboss";
+		health value: (100-2)/3;
 	}
 
-	entity cameratarget : boxcentered {
-		input;
-	}
-
-	entity camera1 : boxcentered {
-		camera farplanedistance: 5000;
-		transform position: 40 50 50;
-		lookat {
-			targettag: "cameratarget";
-			speed: .5;
-		}
-	}
-
-	entity camera2 : boxcentered {
-		camera farplanedistance: 50000;
-		zoom {
-			smoothing: .3;
-			minzoomlevel: 50;
-			maxzoomlevel: 5000;
-		}
-		attachment {
-			targettag: "cameratarget";
-			positionattach: true;
-			positionoffset: 0 15 150;
-			positionoffsetrelative: true;
-			rotationattach: true;
-		}
-	}
-
-	entity {
-		viewport {
-			cameratag: "camera1";
-			bounds: isphone ? (0 0 1 .5) : (0 0 .5 1);
-		}
-	}
-
-	entity {
-		viewport {
-			cameratag: "camera2";
-			bounds: isphone ? (0 .5 1 .5) : (.5 0 .5 1);
+	entity mouse : mouseTarget {
+		transform {
+			scale: (.5 .25 .5) * (3 2 1);
+			rotation: y 45 deg;
 		}
 	}
 
 }
-
 ```
