@@ -10,6 +10,23 @@ Scenes are defined in a custom entity definition language I created, called Grau
 Graupel was designed to be simple and flexible. I based it on languages like JSON,
 and removed some of the verbosity of such languages by simplifying basic object creation.
 
+The main purpose of designing Graupel was to be able to construct game scenes without
+having to modify the actual engine code. Instead, the engine code is limited to the
+components which define characteristics of game entities, and the systems which act
+on those components.
+Meanwhile, the actual game scenes are written in Graupel, outside of the game code itself,
+and the game engine parses and interprets the Graupel code and generates the entities
+with the defined characteristics.
+
+This allows the game development work to be divided into engine/component logic and
+actual scene logic, which in turn allows developers to focus purely on component logic
+while designers can build the game world without affecting the engine code at all.
+
+As a personal project, Hail/Graupel was designed with two purposes in mind:
+1) to familiarize myself with concepts of Entity System based game development, and
+2) to learn how language/expression parsers and execution engines are built.
+
+
 A component within an entity can contain multiple value setters:
 ```
 viewport {
