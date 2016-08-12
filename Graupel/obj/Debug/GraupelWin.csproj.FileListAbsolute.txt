@@ -3,3 +3,8 @@ C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\bin\Debug\Graupel.pdb
 C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\Graupel.dll
 C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\Graupel.pdb
 C:\Users\Reverie\SkyDrive\Projects\Hail\Graupel\obj\Debug\GraupelWin.csprojResolveAssemblyReference.cache
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\bin\Debug\Graupel.dll
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\bin\Debug\Graupel.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Debug\GraupelWin.csprojResolveAssemblyReference.cache
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Debug\Graupel.dll
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Debug\Graupel.pdb

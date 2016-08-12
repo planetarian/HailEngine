@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using Graupel.Util;
 
 namespace Graupel.Lexer
@@ -25,9 +26,6 @@ namespace Graupel.Lexer
             return Type == type;
         }
 
-        public override string ToString()
-        {
-            return Text;
-        }
+        public override string ToString() => $"({Type}) {Regex.Escape(Text)}";
     }
 }

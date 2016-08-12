@@ -11,3 +11,8 @@ C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\bin\Release\Graupel.pdb
 C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\GraupelWin.csprojResolveAssemblyReference.cache
 C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\Graupel.dll
 C:\Users\awolford01\SkyDrive\Projects\Hail\Graupel\obj\Release\Graupel.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\bin\Release\Graupel.dll
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\bin\Release\Graupel.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Release\Graupel.dll
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Release\Graupel.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\Graupel\obj\Release\GraupelWin.csprojResolveAssemblyReference.cache

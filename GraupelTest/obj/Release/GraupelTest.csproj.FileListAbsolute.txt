@@ -1,0 +1,16 @@
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\bin\Release\GraupelTest.exe.config
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\bin\Release\GraupelTest.exe
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\bin\Release\GraupelTest.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\bin\Release\Graupel.dll
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\bin\Release\Graupel.pdb
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.csprojResolveAssemblyReference.cache
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\MainWindow.g.cs
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\App.g.cs
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest_MarkupCompile.cache
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest_MarkupCompile.lref
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\MainWindow.baml
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.g.resources
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.Properties.Resources.resources
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.csproj.GenerateResource.Cache
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.exe
+C:\Users\piro\OneDrive\Projects\HailEngine\GraupelTest\obj\Release\GraupelTest.pdb
